@@ -1,0 +1,227 @@
+/* global styles */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+header, main{
+    width: 83%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    margin-top: 100px;
+}
+/* header style start */
+.header_area{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 5vh;
+}
+.header_logo{
+    width: 50%;
+}
+.header_logo>h1{
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-weight: 700;
+}
+.header_menu{
+    width: 45%;
+}
+.header_menu>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.header_menu>ul>li:nth-of-type(5){
+    cursor: pointer;
+    margin-top: 5px;
+}
+.header_menu>ul>li:nth-of-type(6){
+    margin-top: 5px;
+}
+.header_menu>ul>li>a{
+    color: #3A3A3A;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 16px;
+font-weight: 600;
+}
+.cart>button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.menu_icon{
+    display: none;
+}
+.line{
+    width: 24px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: black;
+}
+.line:nth-of-type(2){
+    margin: 4.5px 0;
+}
+/* hero design start */
+.hero_area{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.hero_text{
+width: 50%;
+}
+.hero_text>h1{
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 134.615%;
+    margin-bottom: 16px;
+}
+.hero_text>p{
+    color: #3A3A3A;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 16px;
+font-weight: 600;
+margin-bottom: 16px;
+}
+
+.hero_text>button{
+    border-radius: 41px;
+background: #E02C6D;
+border: none;
+padding: 10px 20px 10px 20px;
+cursor: pointer;
+}
+.hero_text>button>a{
+    color: #FFF;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 16px;
+font-weight: 700;
+padding: 10px 0;
+}
+.hero_text>button>a>svg{
+    position: relative;
+    top: 1px;
+}
+.hero_img{
+width: 40%;
+}
+.hero_img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:576px) {
+    /* header responsive */
+    .header_area{
+        justify-content: space-between;
+    }
+    .header_menu{
+        display: none;
+
+    }
+    .header_logo{
+        /* width: 33%; */
+        order: -1;
+    }
+    .cart>button{
+        order: 1;
+        /* width: 33%; */
+    }
+    .menu_icon{
+        /* width: 33%; */
+        order: -2;
+        display: block;
+    }
+    .header_logo>h1{
+        color: #3A3A3A;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
+    /* header responsive */
+    /* hero responsive */
+.hero_area{
+    flex-direction: column;
+}
+.hero_text{
+order: 2;
+width: 100%;
+}
+.hero_text>h1{
+   text-align: center;
+   font-size: 28px;
+    }
+    .hero_text>p{
+   text-align: center;
+   font-size: 14px;
+    }
+    .hero_text>button{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 16px;
+    }
+    .hero_text>a>button>svg{
+/* margin-top: 5px; */
+    }
+.hero_img{
+width: 100%;
+}
+    /* hero responsive */
+
+}
+
+
+
+@media screen and (min-width:577px) and (max-width:1000px) {
+        /* header responsive */
+        .header_area{
+            justify-content: space-between;
+        }
+        .header_menu{
+            display: none;
+    
+        }
+        .header_logo{
+            /* width: 33%; */
+            order: -1;
+        }
+        .cart>button{
+            order: 1;
+            /* width: 33%; */
+        }
+        .menu_icon{
+            /* width: 33%; */
+            order: -2;
+            display: block;
+        }
+        .header_logo>h1{
+            color: #3A3A3A;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+        }
+        /* header responsive */
+}
